@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <style>body {
+    background-color: #eee
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.mt-200 {
+    margin-top: 200px
+}</style>
+
+</head>
+
+<body>
+
+    <form method="post" id="login">
+
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+          
+                      <div class="mb-md-5 mt-md-4 pb-5">
+          
+                        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                        <p class="text-white-50 mb-5">Please enter your login and password!</p>
+          
+                        <div class="form-outline form-white mb-4">
+                          <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                          <label class="form-label" for="typeEmailX">Email</label>
+                        </div>
+          
+                        <div class="form-outline form-white mb-4">
+                          <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                          <label class="form-label" for="typePasswordX">Password</label>
+                        </div>
+          
+                       
+          
+                        <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+          
+                        <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                          <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                          <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                          <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                        </div>
+          
+                      </div>
+          
+                      <div>
+                        <p class="mb-0">Don't have an account? <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="color: aliceblue;"> Sign Up </button></p>
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+        
+    </form>
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+<div class="container">
+  <form method="post" id="signup">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div id="smartwizard">
+                        <ul>
+                            <li><a href="#step-1">Step 1<br /><small>Account Info</small></a></li>
+                            <li><a href="#step-2">Step 2<br /><small>Personal Info</small></a></li>
+                            <li><a href="#step-3">Step 3<br /><small>Confirm details</small></a></li>
+                        </ul>
+                        <div class="mt-4">
+                            <div id="step-1">
+                                <div class="row">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Name" id="name" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Phone Number" id="phone" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Password" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Repeat password" required> </div>
+                                </div>
+                            </div>
+                            <div id="step-2">
+                                <div class="row">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Address" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="City" required> </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="State" required> </div>
+                                    <div class="col-md-6"> <input type="text" class="form-control" placeholder="Country" required> </div>
+                                </div>
+                            </div>
+                            
+                            <div id="step-3" class="">
+                                <div class="row">
+                                    <div class="col-md-12"> <span>Thanks For submitting your details with IDEal ARC.Please Confirm your data.    
+                                        <button onClick="form_submit()" class="btn btn-primary"  style="color:white;background-color: green;align-self: center;"> Confirm </button>
+                                    </span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>  
+</div>
+
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src=''></script>
+<script type='text/Javascript'>$(document).ready(function(){
+$('#smartwizard').smartWizard({
+selected: 0,
+theme: 'arrows',
+autoAdjustHeight:true,
+transitionEffect:'fade',
+showStepURLhash: false,
+});
+});</script>
+<script type="text/javascript">
+    function form_submit() {
+      document.getElementById("signup").submit();
+     }    
+    </script>
+</body>
+</html>
